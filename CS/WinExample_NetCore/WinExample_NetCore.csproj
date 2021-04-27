@@ -20,7 +20,7 @@
     <None Include="..\WinExample\Properties\Settings.settings" Link="Settings.settings" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.1.11" />
-    <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.11-ctp" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.1.12" />
+    <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.12-ctp" />
   </ItemGroup>
 </Project>
