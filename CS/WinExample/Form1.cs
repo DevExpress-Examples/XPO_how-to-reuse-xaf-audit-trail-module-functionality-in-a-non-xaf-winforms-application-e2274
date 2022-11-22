@@ -19,17 +19,17 @@ namespace WinExample {
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e) {
-            AuditTrailService.Instance.QueryCurrentUserName += new QueryCurrentUserNameEventHandler(Instance_QueryCurrentUserName);
+            AuditTrailService.GetService(null).QueryCurrentUserName += new QueryCurrentUserNameEventHandler(Instance_QueryCurrentUserName);
             session1.Dictionary.GetDataStoreSchema(typeof(PersistentObject1).Assembly);
-            AuditTrailService.Instance.SetXPDictionary(session1.Dictionary);
-            AuditTrailService.Instance.AuditDataStore = new AuditDataStore<AuditDataItemPersistent, AuditedObjectWeakReference>();
-            AuditTrailService.Instance.BeginSessionAudit(session1, AuditTrailStrategy.OnObjectChanged, ObjectAuditingMode.Full);
+            AuditTrailService.GetService(null).SetXPDictionary(session1.Dictionary);
+            AuditTrailService.GetService(null).AuditDataStore = new AuditDataStore<AuditDataItemPersistent, AuditedObjectWeakReference>();
+            AuditTrailService.GetService(null).BeginSessionAudit(session1, AuditTrailStrategy.OnObjectChanged, ObjectAuditingMode.Full);
         }
         void Instance_QueryCurrentUserName(object sender, QueryCurrentUserNameEventArgs e) {
             e.CurrentUserName = WindowsIdentity.GetCurrent().Name;
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e) {
-            AuditTrailService.Instance.SaveAuditData(session1);
+            AuditTrailService.GetService(null).SaveAuditData(session1);
         }
     }
 }
