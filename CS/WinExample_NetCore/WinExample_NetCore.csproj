@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
@@ -20,7 +20,25 @@
     <None Include="..\WinExample\Properties\Settings.settings" Link="Settings.settings" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.1.13" />
-    <PackageReference Include="DevExpress.WindowsDesktop.Win" Version="20.1.13-ctp" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.BonusSkins" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Charts" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Diagram" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Dialogs" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Gantt" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Gauges" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Map" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.PdfViewer" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.RichEdit" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Scheduler" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.SpellChecker" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.Spreadsheet" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win.TreeMap" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.DataAccess.UI" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Utils" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Utils.UI" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Scaffolding.Core" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Scaffolding.EFCore" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Win" Version="22.2.2-beta" />
   </ItemGroup>
 </Project>
