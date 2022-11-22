@@ -15,7 +15,8 @@ using DevExpress.Xpo;
 namespace WinExample {
     public partial class Form1 : Form {
         public Form1() {
-            XpoDefault.DataLayer = XpoDefault.GetDataLayer("XpoProvider=InMemoryDataStore", DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);
+            //XpoDefault.DataLayer = XpoDefault.GetDataLayer("XpoProvider=InMemoryDataStore", DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);
+            XpoDefault.DataLayer = XpoDefault.GetDataLayer(@"Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=myAudit", DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e) {
