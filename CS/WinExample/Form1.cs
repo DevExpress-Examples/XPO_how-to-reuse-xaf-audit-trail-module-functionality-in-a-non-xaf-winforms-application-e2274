@@ -1,16 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors.DXErrorProvider;
 using DevExpress.Persistent.AuditTrail;
 using System.Reflection;
 using System.Security.Principal;
-using DevExpress.Persistent.BaseImpl;
+
 using DevExpress.Xpo;
+using DevExpress.Persistent.BaseImpl;
 
 namespace WinExample {
     public partial class Form1 : Form {
