@@ -6,19 +6,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\WinExample\Form1.cs" Link="Form1.cs" />
-    <Compile Include="..\WinExample\Form1.Designer.cs" Link="Form1.Designer.cs" />
-    <Compile Include="..\WinExample\PersistentObject1.cs" Link="PersistentObject1.cs" />
-    <Compile Include="..\WinExample\Program.cs" Link="Program.cs" />
-    <Compile Include="..\WinExample\Properties\Resources.Designer.cs" Link="Resources.Designer.cs" />
-    <Compile Include="..\WinExample\Properties\Settings.Designer.cs" Link="Settings.Designer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="..\WinExample\Properties\Resources.resx" Link="Resources.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\WinExample\app.config" Link="app.config" />
-    <None Include="..\WinExample\Properties\Settings.settings" Link="Settings.settings" />
+    <None Include="app.config" Link="app.config" />
+    <None Include="Properties\Settings.settings" Link="Settings.settings" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="25.2.2" />
